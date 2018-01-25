@@ -19,6 +19,9 @@ print root
 root.cssselect("div[align='left']")
 selectstuff = root.cssselect("a")
 print selectstuff
+for i in selectstuff:
+  print i.text
+  print i.attrib['href']
 #
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
